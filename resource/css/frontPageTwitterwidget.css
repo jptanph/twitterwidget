@@ -1,0 +1,125 @@
+    @charset "utf-8";
+
+    /* plugin reset */
+    #sdk_twitterwidget_holder * {padding:0; margin:0}
+    #sdk_twitterwidget_holder, #sdk_twitterwidget_holder th, #sdk_twitterwidget_holder td, #sdk_twitterwidget_holder textarea, #sdk_twitterwidget_holder h1, #sdk_twitterwidget_holder h2, #sdk_twitterwidget_holder h3, #sdk_twitterwidget_holder h4, #sdk_twitterwidget_holder h5, #sdk_twitterwidget_holder h6 {font-family:tahoma, Verdana, sans-serif;font-size:11px}
+    #sdk_twitterwidget_holder th, #sdk_twitterwidget_holder td, #sdk_twitterwidget_holder textarea {line-height:14px}
+    #sdk_twitterwidget_holder {margin:0;padding:0}
+    #sdk_twitterwidget_holder img, #sdk_twitterwidget_holder fieldset {border:0} 
+    #sdk_twitterwidget_holder li {list-style:none;}
+    #sdk_twitterwidget_holder select, #sdk_twitterwidget_holder input {font-family:verdana; color:#000; font-size:1.00em}
+    #sdk_twitterwidget_holderaddress, #sdk_twitterwidget_holder em {font-style:normal}
+    #sdk_twitterwidget_holder button  {border:none; background:none; cursor:pointer}
+    #sdk_twitterwidget_holder hr, #sdk_twitterwidget_holder legend {display:none}
+    #sdk_twitterwidget_holder p, #sdk_twitterwidget_holder h1, #sdk_twitterwidget_holder  h2, #sdk_twitterwidget_holder h3, #sdk_twitterwidget_holder h4, #sdk_twitterwidget_holder h5, #sdk_twitterwidget_holder h6, #sdk_twitterwidget_holder form, #sdk_twitterwidget_holder input, #sdk_twitterwidget_holder ul, #sdk_twitterwidget_holder li, #sdk_twitterwidget_holder dl, #sdk_twitterwidget_holder dt, #sdk_twitterwidget_holder dd, #sdk_twitterwidget_holder span {margin:0; padding:0}
+    #sdk_twitterwidget_holder a img {vertical-align:top}
+    #sdk_twitterwidget_holder a:link {text-decoration:none}
+    #sdk_twitterwidget_holder a:visited {text-decoration:none}
+    #sdk_twitterwidget_holder a:hover    {text-decoration:underline}
+
+    /* plugin container 
+
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container {display:inline-block;padding:0; margin:0;}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container {width:260px;padding-top:5px;background:url(../images/simpletwitter_bg_2.gif) left top no-repeat;}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container #sdk_twitterwidget_expand {float:left;width:260px;padding-bottom:15px;background:url(../images/simpletwitter_bg_expand.gif) left bottom no-repeat;}
+
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container_blue {display:inline-block;padding:0; margin:0;}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container_blue {width:260px;padding-top:5px;background:url(../images/simpletwitter_bg_blue.gif) left top no-repeat;}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container_blue #sdk_twitterwidget_expand{float:left;width:260px;padding-bottom:15px;background:url(../images/simpletwitter_bg_blue_expand.gif) left bottom no-repeat;}
+
+    /* plugin title 
+    #sdk_twitterwidget_holder  h3.sdk_twitterwidget_title {float:left;margin-top:2px;margin-bottom:6px;margin-left:9px;padding-right:10px;font-weight:bold;font-size:12px;font-family:Tahoma, Geneva, sans-serif;color:#fff;line-height:25px;display:inline}
+    */
+
+    /*============FRONT BLUE=============*/
+    /*background holder*/
+    #sdk_twitterwidget_wrap * {margin:0;padding:0;}
+    #sdk_twitterwidget_wrap {display:inline-block;font-size:12px;font-family:Arial, Helvetica, sans-serif;}
+
+
+    /* Front Blue Background */
+    /*
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_b {background:url(/_sdk/img/twitterwidget/bg_h_left.gif) no-repeat left;height:34px;}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_b .sdk_twitterwidget_h_inner{background:url(/_sdk/img/twitterwidget/bg_h_content.gif) repeat-x;height:34px;margin-left:5px !important;line-height:34px}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_b .sdk_twitterwidget_header {background:url(/_sdk/img/twitterwidget/bg_h_right.jpg) no-repeat right;height:34px;padding-right:10px;text-decoration:none;display:block}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_b .sdk_twitterwidget_header span {font-size:12px;font-family:tahoma, geneva, sans-serif;color:#fff;font-weight:bold;display:inline-block;margin-top:6px;margin-left:15px !important}/*background:url(../images/pg_h_bullet.gif) no-repeat right;padding-right:15px !important;*/
+    */
+    
+    /* Front Gray Background */
+    /*
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g {background:url(/_sdk/img/twitterwidget/bg_h_left_gr.gif) no-repeat left;height:34px;}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g .sdk_twitterwidget_h_inner{background:url(/_sdk/img/twitterwidget/bg_h_content_gr.gif) repeat-x;height:34px;margin-left:5px !important;line-height:34px}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g .sdk_twitterwidget_header {background:url(/_sdk/img/twitterwidget/bg_h_right_gr.jpg) no-repeat right;height:34px;padding-right:10px;text-decoration:none;display:block}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g .sdk_twitterwidget_header span{font-size:12px;font-family:tahoma, geneva, sans-serif;color:#fff;font-weight:bold;display:inline-block;margin-top:6px;margin-left:15px !important}/*background:url(../images/pg_h_bullet.gif) no-repeat right;padding-right:15px !important;*/
+    */
+    
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g {height:34px;}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g .sdk_twitterwidget_h_inner{height:5px;margin-left:5px !important;line-height:34px}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g .sdk_twitterwidget_header {height:5px;padding-right:10px;text-decoration:none;display:block}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_h_outer_g .sdk_twitterwidget_header span{font-size:12px;font-family:tahoma, geneva, sans-serif;color:#fff;font-weight:bold;display:inline-block;margin-top:6px;margin-left:15px !important}/*background:url(../images/pg_h_bullet.gif) no-repeat right;padding-right:15px !important;*/
+
+
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_c_outer {width:auto;}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_c_inner {}
+
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_c_area {width:100%;text-align:center;display:inline-block;word-break:no-break;}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_content{width:100%;margin-bottom:5px !important;display:inline-block;}
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_stockinfo{width:100%;display:inline-block;text-align:center;}
+
+    /*  MAIN CONTENT AREA  */
+    #sdk_twitterwidget_wrap .sdk_twitterwidget_stockinfo_maincontent {display:inline-block;margin:10px 0 15px 0;width:99%;float:right;}
+
+    /*============FRONT BLUE=============*/
+    /* plugin title */
+    .sdk_twitterwidget_header span.sdk_twitterwidget_title img{width:100%;*max-width:90px;*height:70%;_width:100px;_height:20px;}
+    /* feed container */
+    #sdk_twitterwidget_holder  ul.sdk_twitterwidget_feeds {width:100%;padding-top:9px;margin-top:0px;text-align:left;display:inline-block;}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container > ul.sdk_twitterwidget_feeds {margin-left:9px;overflow:auto;}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container_blue > ul.sdk_twitterwidget_feeds {margin-left:9px;overflow:auto;}
+    #sdk_twitterwidget_holder .sdk_twitterwidget_notify {float:left;margin-top:18px;margin-bottom:4px;margin-left:10px;font: 12px Tahoma, Geneva, sans-serif;color:black}
+    /* feed items */
+    #sdk_twitterwidget_holder  li.sdk_twitterwidget_item {text-align:left;padding-top:7px;padding-bottom:13px;border-bottom:1px solid #ccc;margin-left:6px;}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container > li.sdk_twitterwidget_item {width:100%;padding-top:7px;padding-bottom:13px;border-bottom:1px solid #ccc}
+    #sdk_twitterwidget_holder  #sdk_twitterwidget_container_blue > li.sdk_twitterwidget_item {width:100%;padding-top:7px;padding-bottom:13px;border-bottom:1px solid #ccc}
+    #sdk_twitterwidget_holder  li.sdk_twitterwidget_item img {width:30px !important;height:30px !important;float:left;margin-right:0;margin-right:3px;}
+    #sdk_twitterwidget_holder  li.sdk_twitterwidget_item div {width:81%;margin-top:-3px;display:inline-block;margin-left:5px;}
+    #sdk_twitterwidget_holder  p.sdk_twitterwidget_text {font:11px Arial, Helvetica, sans-serif;color:#333;margin-bottom:7px;white-space:normal;
+    /* automatic line break for super long word 
+        white-space: pre;  
+        white-space: pre-wrap;
+        white-space: pre-line;  
+        white-space: -pre-wrap;  
+        white-space: -o-pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -hp-pre-wrap; */
+        word-wrap: break-word;
+    }
+    #sdk_twitterwidget_holder  .sdk_twitterwidget_text a {font:11px Arial, Helvetica, sans-serif;color:#558de2;}
+    #sdk_twitterwidget_holder  .sdk_twitterwidget_text a:hover {color:#84b0f2;text-decoration:none;}
+    #sdk_twitterwidget_holder  strong.sdk_twitterwidget_user a {margin-right:5px;font:bold 12px Arial, Helvetica, sans-serif;color:#558de2;text-decoration:underline;}
+    #sdk_twitterwidget_holder  strong.sdk_twitterwidget_user a:hover {color:#84b0f2;text-decoration:underline;}
+    #sdk_twitterwidget_holder  span.sdk_twitterwidget_stamp {font:10px Arial, Helvetica, sans-serif;color:#999;}
+    
+    
+    
+    
+/* Intended for IE6 and IE7 only */
+#sdk_twitterwidget_holder  .sdk_twitterwidget_text {*width:95%}
+
+
+/** for ie7**/
+/*
+#main_subpage {overflow:hidden;min-height:466px;}
+#middle_subpage {min-height:416px;}
+
+.html_editor .addtion_list {height:24px}
+*/
+/* Front Lei */
+/*
+#sdk_twitterwidget_holder  ul.sdk_twitterwidget_feeds {*width:100%;*height:300px;*padding-top:9px;*margin-top:0px;*text-align:left;*overflow-y:auto;*overflow-x:hidden;*display:inline-block;}
+#sdk_twitterwidget_holder  li.sdk_twitterwidget_item {*width:95%;*padding-top:7px;*padding-bottom:13px;*border-bottom:1px solid #ccc;}
+.sdk_twitterwidget_header span.sdk_twitterwidget_title img{*max-width:96px;*min-width:35px;*height:100%;}
+
+*html .sdk_twitterwidget_header span.sdk_twitterwidget_title img{*height:20px;*width:100px;}
+    
+*/

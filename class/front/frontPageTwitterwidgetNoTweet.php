@@ -1,7 +1,7 @@
 <?php
 require_once('builder/builderInterface.php');
 
-class frontPageTwitterwidget extends Controller_Front
+class frontPageTwitterwidgetNoTweet extends Controller_Front
 {
     protected function run($aArgs)
     {
@@ -15,22 +15,11 @@ class frontPageTwitterwidget extends Controller_Front
         $xTweetInfo = $this->twitterApi($sTwitterUrl);
 
         if(!$aResult || strpos($xTweetInfo,'Not found')==55 || strpos($xTweetInfo,'Not authorized')==55 || $xTweetInfo=='' || strpos($xTweetInfo,'Rate limit exceeded.')==55){
-            $this->fetchClear();
+
         }else{
-            $xData = simplexml_load_string($xTweetInfo);
-             foreach($xData as $rows){
-                $sTime = date('D M j @ g:i A', strtotime($rows->created_at) + 0 * 60);
-                $sMessage = $this->twitter_links($rows->text);
-                $aData[] = array(
-                    'sImage' => $rows->user->profile_image_url,
-                    'sTimeTweet' => $sTime,
-                    'sMessage' => $this->twitter_links($rows->text),
-                    'sUsername' => $aResult['username'],
-                    'sUserTwitterUrl' => "http://www.twitter.com/{$aResult['username']}"
-                );
-            }
-            $this->loopFetch($aData);
+            $this->fetchClear();
         }
+
     }
 
     public function twitterApi($sUrl)

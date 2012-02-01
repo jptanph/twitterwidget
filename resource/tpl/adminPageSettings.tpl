@@ -21,7 +21,7 @@
 <tr>
 	<th><label for="show_html_value">Username</label></th>
 	<td>
-		<span class="neccesary">*</span> <input type="text" fw-filter="isFill"  id="username" value="<?php echo $sUsername; ?>" class="fix" name="username"/>
+		<span class="neccesary">*</span> <input type="text" fw-filter="isFill"  id="username" value="<?php echo $sUsername; ?>" class="fix" name="username" maxlength="15"/>
 		<br />&nbsp;&nbsp;&nbsp;E.G. (adietan63)
 		<span class="limit">
 			<span id="span-username" style="display:none;">Required Field</span>

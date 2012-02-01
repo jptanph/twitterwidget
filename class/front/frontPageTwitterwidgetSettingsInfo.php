@@ -15,11 +15,11 @@ class frontPageTwitterwidgetSettingsInfo extends Controller_Front
         $xTweetInfo = $this->twitterApi($sTwitterUrl);
         $xData = simplexml_load_string($xTweetInfo);
         $sHtml = '';
-        $sHtml .= "<input type='text' value='{$aResult['username']}'>";
-        $sHtml .= "<input type='text' value='{$aResult['post_count']}'>";
-        $sHtml .= "<input type='text' value='{$aResult['post_count']}'>";
-
-        $this->assign('sUsername',$sHtml);
+        $sHtml .= "<input type='hidden' value='{$aResult['username']}' id='sUsername'  name='sUsername'>";
+        $sHtml .= "<input type='hidden' value='{$aResult['post_count']}' id='iDbTweet' name='iDbTweet'>";
+        $sHtml .= "<input type='hidden' value='" . count($xData) . "'  id='iTotalTweet' name='iTotalTweet'>";
+        $this->assign('sSettingsInfo',$sHtml);
+        $this->assign('sUsername',$aResult['username']);
         $this->assign('iDbTotalTweet',$aResult['post_count']);
         $this->assign('iTotalTweet',count($xData));
 

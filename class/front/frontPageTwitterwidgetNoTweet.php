@@ -19,7 +19,6 @@ class frontPageTwitterwidgetNoTweet extends Controller_Front
         }else{
             $this->fetchClear();
         }
-
     }
 
     public function twitterApi($sUrl)

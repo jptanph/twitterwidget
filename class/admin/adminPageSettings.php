@@ -10,15 +10,13 @@ class adminPageSettings extends Controller_Admin
         $sPrefix = $sAppId . '_';
 
         /** usbuilder initializer.**/
-        $sInitScript = usbuilder()->init($this->Request->getAppID(), $aArgs);
-        $sFormScript = usbuilder()->getFormAction($sPrefix . 'settings_form','adminExecSave');
-        $this->writeJs($sFormScript);
-        $this->writeJs($sInitScript);
+        usbuilder()->init($this, $aArgs);
+        usbuilder()->getFormAction($sPrefix . 'settings_form','adminExecSave');
+
         usbuilder()->validator(array('form' => $sPrefix. 'settings_form'));
         /** usbuilder initializer.**/
-        $model = new modelAdmin();
-        $aResult = $model->execGetSettings();
 
+        $aResult =common()->modelAdmin()->execGetSettings();
 
         $this->importJs(__CLASS__);
         $this->assign('sImagePath',$sImagePath);

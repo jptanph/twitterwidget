@@ -1,3 +1,4 @@
+<div id="sdk_message_box"></div>
 <form id="<?php echo $sPrefix;?>settings_form" class="<?php echo $sPrefix?>settings_form" name="<?php echo $sPrefix;?>settings_form" method="post">
 <input type="hidden" name="idx" id="idx" value="<?php echo $iIdx;?>">
 <p class="require"><span class="neccesary">*</span> Required</p>

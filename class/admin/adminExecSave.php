@@ -5,28 +5,25 @@ class adminExecSave extends Controller_AdminExec
 {
     protected function run($aArgs)
     {
-        $sInitScript = usbuilder()->init($this->Request->getAppID(), $aArgs);
-        $this->writeJs($sInitScript);
+        usbuilder()->init($this, $aArgs);
 
         $sUrl = usbuilder()->getUrl('adminPageSettings');
 
-        $model = new modelAdmin();
-        $aResult = $model->execGetSettings();
+        $aResult = common()->modelAdmin()->execGetSettings();
 
         if($aResult)
         {
-            $bResult = $model->execUpdate($aArgs);
+            $bResult = common()->modelAdmin()->execUpdate($aArgs);
         }
         else
         {
-            $bResult = $model->execSave($aArgs);
+            $bResult = common()->modelAdmin()->execSave($aArgs);
         }
         if($bResult===false){
             usbuilder()->message('Saved failed!', 'warning');
         }else{
             usbuilder()->message('Saved succesfully!', 'success');
         }
-        $sJsMove = usbuilder()->jsMove($sUrl);
-        $this->writeJS($sJsMove);
+        usbuilder()->jsMove($sUrl);
     }
 }

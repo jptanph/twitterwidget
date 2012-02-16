@@ -7,10 +7,10 @@ class frontPageTwitterwidgetNoTweet extends Controller_Front
     {
         $sAppId = $this->Request->getAppID();
         $sImagePath = "/_sdk/img/$sAppId/";
+        usbuilder()->init($this, $aArgs);
         $aData = array();
-        $model = new modelFront();
 
-        $aResult = $model->execGetUserInfo();
+        $aResult = common()->modelFront()->execGetUserInfo();
         $sTwitterUrl = "http://api.twitter.com/1/statuses/user_timeline/".$aResult['username'].".xml?count=".$aResult['post_count']."";
         $xTweetInfo = $this->twitterApi($sTwitterUrl);
 

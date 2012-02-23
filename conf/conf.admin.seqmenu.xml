@@ -1,0 +1,5 @@
+<!-- This file set menus when sequence is being added -->
+<?xml version="1.0" encoding="utf-8"?>
+<adminmenus>
+    <menu lang="twitterwidget" param="TwitterwidgetPageSettings"/>
+</adminmenus>

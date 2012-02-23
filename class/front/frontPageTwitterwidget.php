@@ -9,8 +9,8 @@ class frontPageTwitterwidget extends Controller_Front
         $sImagePath = "/_sdk/img/$sAppId/";
         usbuilder()->init($this, $aArgs);
         $aData = array();
-
-        $aResult = common()->modelFront()->execGetUserInfo();
+        $aOption['seq'] = $this->getSequence();
+        $aResult = common()->modelFront()->execGetUserInfo($aOption);
         $sTwitterUrl = "http://api.twitter.com/1/statuses/user_timeline/".$aResult['username'].".xml?count=".$aResult['post_count']."";
         $xTweetInfo = $this->twitterApi($sTwitterUrl);
 

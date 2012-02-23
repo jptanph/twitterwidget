@@ -6,10 +6,11 @@ class adminExecSave extends Controller_AdminExec
     protected function run($aArgs)
     {
         usbuilder()->init($this, $aArgs);
+        usbuilder()->getAppInfo('seq');
 
         $sUrl = usbuilder()->getUrl('adminPageSettings');
 
-        $aResult = common()->modelAdmin()->execGetSettings();
+        $aResult = common()->modelAdmin()->execGetSettings($aArgs);
 
         if($aResult)
         {

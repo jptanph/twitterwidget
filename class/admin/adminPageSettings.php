@@ -16,9 +16,10 @@ class adminPageSettings extends Controller_Admin
         usbuilder()->validator(array('form' => $sPrefix. 'settings_form'));
         /** usbuilder initializer.**/
 
-        $aResult =common()->modelAdmin()->execGetSettings();
+        $aResult = common()->modelAdmin()->execGetSettings($aArgs);
 
         $this->importJs(__CLASS__);
+        $this->assign('iSequence',$aArgs['seq']);
         $this->assign('sImagePath',$sImagePath);
         $this->assign('sPrefix',$sPrefix);
         $this->assign('sUsername',$aResult['username']);

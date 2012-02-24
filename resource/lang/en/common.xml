@@ -2,8 +2,8 @@
 <lang>
     <menu>  
         <var name="twitterwidget">Twitter Widget</var>
+        <var name="menu_contents">Twitter Widget Settings</var>
     </menu>    
     <var name="lang">subject</var>
     <var name="name">Subject</var>
 </lang>
-

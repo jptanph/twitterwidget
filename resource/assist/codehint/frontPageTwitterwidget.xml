@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codehint>
+    <var value="username" name="User's Name"></var>
+    <var value="user_url" name="User twitter url"></var>
+    <var value="image" name="User Profile Image"></var>
+    <var value="message" name="User tweet message"></var>
+    <var value="time_tweet" name="The time the user tweet."></var>
+</codehint>

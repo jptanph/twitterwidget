@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codehint>
+    <var value="username" name="User's Name"></var>
+    <var value="db_count_tweet" name="The number of tweet specified by the user on settings."></var>
+    <var value="total_tweet" name="Number of tweets that retreives from the twitter API."></var>
+    <var value="settings_info" name="All user settings information"></var>
+</codehint>

@@ -22,11 +22,11 @@ class frontPageTwitterwidget extends Controller_Front
                 $sTime = date('D M j @ g:i A', strtotime($rows->created_at) + 0 * 60);
                 $sMessage = $this->twitter_links($rows->text);
                 $aData[] = array(
-                    'sImage' => $rows->user->profile_image_url,
-                    'sTimeTweet' => $sTime,
-                    'sMessage' => $this->twitter_links($rows->text),
-                    'sUsername' => $aResult['username'],
-                    'sUserTwitterUrl' => "http://www.twitter.com/{$aResult['username']}"
+                    'image' => $rows->user->profile_image_url,
+                    'time_tweet' => $sTime,
+                    'message' => $this->twitter_links($rows->text),
+                    'username' => $aResult['username'],
+                    'user_url' => "http://www.twitter.com/{$aResult['username']}"
                 );
             }
             $this->loopFetch($aData);

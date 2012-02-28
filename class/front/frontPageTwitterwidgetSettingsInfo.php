@@ -18,10 +18,10 @@ class frontPageTwitterwidgetSettingsInfo extends Controller_Front
         $sHtml .= "<input type='hidden' value='{$aResult['username']}' id='sUsername'  name='sUsername'>";
         $sHtml .= "<input type='hidden' value='{$aResult['post_count']}' id='iDbTweet' name='iDbTweet'>";
         $sHtml .= "<input type='hidden' value='" . count($xData) . "'  id='iTotalTweet' name='iTotalTweet'>";
-        $this->assign('sSettingsInfo',$sHtml);
-        $this->assign('sUsername',$aResult['username']);
-        $this->assign('iDbTotalTweet',$aResult['post_count']);
-        $this->assign('iTotalTweet',count($xData));
+        $this->assign('settings_info',$sHtml);
+        $this->assign('username',$aResult['username']);
+        $this->assign('db_count_tweet',$aResult['post_count']);
+        $this->assign('total_tweet',count($xData));
 
     }
 

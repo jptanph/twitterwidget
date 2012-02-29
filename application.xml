@@ -2,20 +2,22 @@
 <application>
     <langs support="en" default="en"></langs>
     <api use="off">
-        <ifs>
-        </ifs>
+        <if class="apiBuilderLib" permission="off" desc="Api for the builder library"></if>        
     </api>
-    <admin use="on" index="adminIndex">
+    <admin use="on" index="adminPageSettings">
         <ifs>
-            <if class="adminIndex" permission="off" desc="Sample Admin Interface"></if>
+            <if class="adminPageSettings" permission="off" desc="Display Setting page for the user"></if>
+            <if class="adminExecSave" permission="off" desc="Save the user's setting"></if>     
+            <if class="adminPageManage" permission="off" desc="Display manage page for adding sequence module"></if>                  
         </ifs>
         <menus>
         </menus>
     </admin>
     <front use="on">
         <ifs>
-            <if class="frontSample" permission="off" code-assist="off" desc="Sample Front Interface">
-            </if>
+            <if class="frontPageTwitterWidget" permission="off" code-assist="on" desc="Display twitter information for the front"></if>
+            <if class="frontPageTwitterWidgetNoTweet" permission="off" code-assist="on" desc="Display if the user's setting is invalid or if the twitter API down"></if>         
+            <if class="frontPageTwitterWidgetSettingsInfo" permission="off" code-assist="on" desc="Display the setting information from the user"></if>                        
         </ifs>
     </front>
 </application>
